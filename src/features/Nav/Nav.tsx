@@ -16,7 +16,6 @@ const StyledNav = styled.nav`
 
 const NavComponent = () => {
 	const navWidthPx = useSettingsStore((store) => store.navWidthPx)
-	// const { navWidthPx } = useSettingsService()
 
 	return (
 		<StyledNav style={{ width: navWidthPx }}>
