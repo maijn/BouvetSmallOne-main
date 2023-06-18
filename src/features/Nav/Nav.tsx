@@ -24,7 +24,7 @@ const NavComponent = () => {
 			<hr />
 			<Link to="/task/incrementor">Incrementor</Link>
 			<Link to="/task/page-title">Page Title</Link>
-			<Link to="/task/simple-todo">Simple Todo</Link>
+			<Link to="/task/simple-todo">Todo List</Link>
 			<hr />
 			<Link to="/users">Users</Link>
 			<Link to="/settings">Settings</Link>
