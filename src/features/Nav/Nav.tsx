@@ -26,7 +26,6 @@ const NavComponent = () => {
 			<Link to="/task/simple-todo">Todo List</Link>
 			<hr />
 			<Link to="/users">Users</Link>
-			<Link to="/settings">Settings</Link>
 		</StyledNav>
 	)
 }

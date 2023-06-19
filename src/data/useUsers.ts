@@ -3,7 +3,7 @@ import { User, UserDTO, UserResponse } from "./userModel"
 
 const fetchUsers = async (query?: string) => {
 	const url = query
-		? `https://dummyjson.com/users/search?q=${query}`
+		? `https://dummyjson.com/users/searc?q=${query}`
 		: "https://dummyjson.com/users"
 	const response = await fetch(url)
 	const body: UserResponse = await response.json()

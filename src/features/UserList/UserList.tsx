@@ -1,7 +1,6 @@
 import { useUsers } from "data/useUsers"
-import React, { useMemo } from "react"
+import React from "react"
 import { Link } from "react-router-dom"
-import { useFooter } from "services/headerFooterService"
 import { TextInput } from "ui/TextInput"
 import { useDebounce } from "utils/useDebounce"
 
@@ -13,7 +12,6 @@ export interface UserListProps {
 const UserListComponent = ({ query, onQueryChange }: UserListProps) => {
 	const { debouncedValue: debouncedSearchText } = useDebounce(query, 250)
 	const { data = [] } = useUsers(debouncedSearchText)
-	useFooter(useMemo(() => <p>User count: {data.length}</p>, [data.length]))
 
 	return (
 		<>
